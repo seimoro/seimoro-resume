@@ -1,0 +1,16 @@
+.btn{
+    padding: 1vh 1vw;
+    border-radius: .5vw;
+    background: var(--light);
+    font-size: 1.2em;
+    min-width: 3em;
+}
+
+body.dark .btn{
+    background: var(--black);
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    transition-duration: 500ms;
+}

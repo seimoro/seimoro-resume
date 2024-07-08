@@ -1,0 +1,43 @@
+.dark-btn{
+    position: relative;
+    border: .09vw solid var(--black);
+    border-radius: 25vw;
+    width: 2.5em;
+    height: 1.2em;
+    transition-duration: 500ms;
+    background: var(--white);
+}
+
+body.dark .dark-btn{
+    border-color: var(--white);
+    background: var(--dark);
+}
+
+.slider{
+    top: 5%;
+    left: 5%;
+    position: absolute;
+    height: 90%;
+    width: 30%;
+    background: var(--black);
+    border-radius: 50%;
+    transition-duration: 500ms;
+}
+
+body.dark .slider{
+    transform: translateX(1.35em);
+    background: var(--white);
+}
+
+
+/*@media(max-width: 780px){
+    .dark-btn{
+        width: 8vw;
+    }
+    body.dark .slider{
+        transform: translateX(4vw);
+    }
+    .slider{
+        top: 2%;    
+    }
+}*/

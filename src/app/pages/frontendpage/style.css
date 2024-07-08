@@ -1,0 +1,77 @@
+.page-logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.page-logo h1{
+    font-size: 1.5em;
+    border-bottom: .1vw solid var(--accent);
+    width: 20%;
+}
+
+.frontend span{
+    color: var(--accent);
+}
+
+.frontend__content-block{
+    display: flex;
+    width: 100%;
+    gap: 2vw;
+}
+
+.frontend-textblock{
+    margin-top: 2vh;
+    font-size: 1.1em;
+    background: var(--white);
+    border-radius: .5vw;
+    padding: 3vh 2vw;
+    width: 49%;
+
+}
+body.dark .frontend-textblock{
+    background: var(--dark);
+}
+
+.frontend-textblock h2{
+    font-size: 1.5em;
+    margin-bottom: 2vh;
+    font-weight: 600;
+}
+
+.frontend-textblock p{
+    margin-bottom: 1vh;
+}
+
+.counter{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    font-size: 1.2em;
+    margin-bottom: 2vh;
+}
+.frontend-textblock .dark-btn{
+    width: 1.5em;
+    height: .7em;
+}
+body.dark .frontend-textblock .slider{
+    transform: translateX(.8em);
+}
+.btn-back{
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    border: .1vw solid var(--accent);
+    padding: .5vh .5vw;
+    border-radius: .5vw;
+}
+
+@media (max-width: 780px){
+    .frontend__content-block{
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .frontend-textblock{
+        width: 100%;
+    }
+    
+}

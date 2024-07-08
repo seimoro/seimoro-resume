@@ -1,0 +1,75 @@
+
+
+.admin-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-container form{
+    width: 100%;
+    background: var(--light);
+    border-radius: .5vw;
+    padding: 3vh 3vw;
+    margin: 3vh 3vw;
+    border: .2vw solid var(--white);
+    max-height: 65vh;
+}
+
+body.dark .admin-container form, body.dark .admin-container form .btn{
+    background: var(--black);
+    border-color: var(--dark);
+}
+
+.admin-container form .btn{
+    
+    border: .2vw solid var(--white);
+}
+
+.admin-container form h1{
+    font-size: 1.5em;
+}
+
+.title-input, .content-input{
+    background: var(--white);
+    width: 100%;
+    border-radius: .5vw;
+    padding: 1vh 1vw;
+    margin: 2vh 0;
+}
+
+.content-input{
+    resize: none;
+    height: 30vh;
+}
+
+body.dark .title-input, body.dark .content-input{
+    background: var(--dark);
+}
+
+
+.blog-container{
+    width: 50%;
+}
+
+.left-side-panel{
+    width: 40%;
+    margin: 0 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redirect-back{
+    border-radius: .5vw;
+    margin: 2vh 0;
+    padding: .2vh .2vw;
+    background: var(--dark);
+}
+
+@media (max-width: 780px) {
+    .left-side-panel, .blog-container{
+        width: 90%;
+    }
+}

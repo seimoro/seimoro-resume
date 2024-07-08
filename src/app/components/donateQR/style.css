@@ -1,0 +1,56 @@
+.donateQR{
+    width: 20%;
+    padding: 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--white);
+    border-radius: .5vw;
+}
+
+body.dark .donateQR{
+    background: var(--dark);
+}
+.qr-container{
+    border-radius: .5vw;
+    width: 15vw;
+    padding: 2vh 1vw;
+    background: var(--white);
+}
+
+.donate-textblock{
+    margin: 2vh 2vw;
+    width: 100%;
+    text-align: center;
+}
+
+.donate-textblock h2{
+    font-size: 1.5em;
+}
+
+.donate-textblock span{
+    color: var(--accent);
+}
+
+
+
+.donateQR a{
+    color: var(--black);
+    font-size: 1em;
+}
+
+
+
+body.dark .donateQR a{
+
+    color: var(--white);
+}
+
+@media (max-width: 780px){
+    .donateQR{
+        width: 40%;
+    }
+    .qr-container{
+        width: 30vw;
+    }
+}

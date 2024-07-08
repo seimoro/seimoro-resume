@@ -1,0 +1,68 @@
+.homepage{
+    width: 100vw;
+}
+
+.homepage-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.homepage-logo{
+    z-index: 1;
+}
+
+.homepage-logo span{
+    color: var(--accent);
+}
+
+.homepage-logo h1{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.homepage-textblock{
+    width: 100%;
+    margin: 2vh 2vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homepage-textblock__item{
+    margin-top: 2.5vh;
+    width: 100%;
+    border-radius: .5vw;
+    padding: 2vh 2vw;
+}
+
+
+
+.homepage-textblock__item h1{
+    font-size: 3em;
+    margin-bottom: 2vh;
+}
+.homepage-textblock__item p{
+    font-size: 1.5em;
+    margin-bottom: 1.5vw;
+    text-align: justify;
+}
+
+
+.toBlog{
+    color: var(--black);
+    margin-left: 2vw;
+}
+
+.toBlog .btn{
+    background: var(--white);
+}
+
+body.dark .toBlog{
+    color: var(--white);
+}
+
+body.dark .toBlog .btn{
+    background: var(--dark);
+}
+

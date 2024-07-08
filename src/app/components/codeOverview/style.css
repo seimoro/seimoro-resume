@@ -1,0 +1,16 @@
+
+.code-container{
+    width: 100%;
+    background: var(--white);
+}
+
+.code-content{
+    padding: 1vh 2vw;
+    border-radius: .5vw;
+    font-size: 0.8em;
+    background: var(--dark);
+}
+
+body.dark .code-container{
+    background: var(--dark);
+}

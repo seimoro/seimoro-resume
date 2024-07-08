@@ -1,0 +1,124 @@
+.navbar{
+    width: 100vw;
+}
+
+.nav-logo{
+    font-size: 1.3em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-logo span{
+    color: var(--accent);
+}
+
+.nav-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+.nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.nav-link{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.darkModeSwitch{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 1vw;
+}
+
+.darkModeImg{
+    width: 1.5em;
+}
+
+body.dark .nav-link{
+    color: var(--white);
+}
+
+body.dark .nav-link:hover, .nav-link:hover, body.dark .nav-link.active, .nav-link.active{
+    color: var(--accent);
+    transition-duration: 500ms;
+}
+
+.gitHub-icon{
+    width: 1.5em;
+}
+
+.menu{
+    width: 3vw;
+    display: none;
+}
+
+.menu_line{
+    width: 1em;
+    height: .25vh;
+    border-radius: .5vw;
+    background: var(--black);
+    margin: .5vh 0;
+}
+
+body.dark .menu_line{
+    background: var(--white);
+}
+
+@media(max-width: 780px){
+    /*.nav-logo{
+        font-size: 3vw;
+    }
+*/
+    .menu{
+        display: block;
+    }
+
+    .nav-row{
+        display: none;
+    }
+
+    .nav-row.active{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        top: 7vh;
+        left: 5vw;
+        width: 90vw;
+        height: 100vh;
+        backdrop-filter: blur(1vw) brightness(.7);
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*.nav-link{
+        font-size: 5vw;
+    }*/
+
+    .darkModeImg{
+        width: 4vw;
+    }
+
+    /*.gitHub-icon{
+        width: 8vw;
+    }*/
+}

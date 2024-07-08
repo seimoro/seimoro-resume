@@ -1,0 +1,27 @@
+.blog-card{
+    width: 100%;
+    border-radius: .5vw;
+    background: var(--white);
+    padding: 2vh 2vw;
+    margin: 3vh 3vw;
+}
+
+body.dark .blog-card{
+    background: var(--dark);
+}
+
+.blog-card h1{
+    font-size: 2em;
+    color: var(--accent);
+    padding: 2vh 0;
+    border-bottom: .1vw solid var(--accent);
+}
+
+.blog-card p{
+    font-size: 1.2em;
+    margin: 2vh 0;
+}
+
+.remove-item.hidden{
+    display: none;
+}
