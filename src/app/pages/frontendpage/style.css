@@ -53,9 +53,7 @@ body.dark .frontend-textblock{
     width: 1.5em;
     height: .7em;
 }
-body.dark .frontend-textblock .slider{
-    transform: translateX(.8em);
-}
+
 .btn-back{
     font-size: 1em;
     display: flex;

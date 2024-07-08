@@ -1,11 +1,14 @@
 .dark-btn{
     position: relative;
+    display: flex;
+    flex-direction: row;
     border: .09vw solid var(--black);
     border-radius: 25vw;
     width: 2.5em;
     height: 1.2em;
     transition-duration: 500ms;
     background: var(--white);
+    align-items: center;
 }
 
 body.dark .dark-btn{
@@ -14,18 +17,18 @@ body.dark .dark-btn{
 }
 
 .slider{
-    top: 5%;
+    aspect-ratio: 1;
     left: 5%;
     position: absolute;
-    height: 90%;
-    width: 30%;
+    /*height: 90%;*/
+    width: 40%;
     background: var(--black);
     border-radius: 50%;
     transition-duration: 500ms;
 }
 
 body.dark .slider{
-    transform: translateX(1.35em);
+    left: 55%;
     background: var(--white);
 }
 
